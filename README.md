@@ -1,5 +1,5 @@
 # Table of content 
-- [Courses](#headers)
+- [The Duck's School](#headers)
 - [Dataset Description](#headers1)
 - [Implementation Technologies](#headers2)
 - [App Structure](#headers3)
@@ -15,65 +15,47 @@
 <a href="https://www.youtube.com/watch?v=3nJdvB94k4U&ab_channel=Philipp">A Youtube video shows a demo</a>
 
 
-# Courses
-Welcome to the Lecture Recommender Application: <b>Courses</b>.<br>
-In this project work we use informations about the study programm and interests of students to recommend them the courses that fit the best to them.
-We give the students the possibility to dive deeper into the lecture information as well as lectures evaluations from the previous semesters.
-* The Lecture Recommender Application was created as part of a school project for [Learning Analytics](https://www.uni-due.de/soco/teaching/courses/lecture-la-ws18.php)
+# The Duck's School
+Welcome to The Ducks' School, where students may choose their ideal course based on many approaches.
+In Ducks' School, we use information about subjects they have studied and other students' subjects by employing the Recommended Systems approach, as well as the non-Personalized approach by visualizing different attributes of courses to students to assist them compare between the courses. The Ducks' School is user-friendly for students in all disciplines, not just IT.
+The Ducks' School was developed as part of a Learning Analytics school project.
 
 
-See the deployed application on Heroku server:
-
-* [Courses](https://laproject.herokuapp.com/)
+* [The Duck's School]
 
 <a name="headers1"/>
 
 # Dataset Description
-For this project we created our own dataset based on infromations collected from the [Module Database](https://www.uni-due.de/vdb/en_EN/pruefung/1245/detail) for the lectures of the [Department of Computer Science and Applied Cognitive Science (INKO)](https://www.uni-due.de/iw/inko/en/).
-These informations are:
-* Lecture name
-* Language
-* Assigned Study Courses
-* Assigned People
-* Lecture Description, Learning Targets and Pre-Qualifications
 
-Beside these informations, we also collected informations from the [Course Evaluation](https://moodle.uni-due.de/course/view.php?id=2032) which is a summary of students evaluations of lectures for the <b>sommer semester 2019</b> and the <b>winter semester 2019/2020</b>. For privacy reasons the course evaluation is only accessible for students with a moodle account and contains only the evaluation of students for the last 2 years.
-These informations are:
-* Average rating of the lecture
-* Positiv and negative comments of students about the lectures
-
-Needed libraries:
-
-```ruby
-* Beautifulsoup
-* PyPDF2
 ```
 
 <a name="headers2"/>
 
 # Implementation Technologies
-This project is based on the following technologies:
+The following technologies are used in this project:
 
+* Data preprocessing:
+  + Pandas
+  + Numpy  
 * Front-End
   + Website
     + Flask templates
+    + JS
+    + AJAX
     + CSS
     + HTML
   + Visualisation
     + Bokeh
 * Back-End
   + Web Server
-    + Python
     + Flask
-  +  Data Scraping
-     +  Beautifulsoup
-     +  PyPDF2
-  +  Natural Language Processing (NLP)
-     + NLTK  
   + Machine Learning 
-    + Gensim
+    + Recommender Systems: Recommenders from Microsoft
   + Database
     + mongoDB
+* Data preprocessing:
+  + Jupyter Notebook
+  + Pycharm 
 
 <a name="headers3"/>
 
@@ -142,106 +124,12 @@ def home():
 <a name="headers4"/>
 
 # Visualization
-All Visualisation chart is built using:
-
+All visualization charts are created with the tool Bokeh, and there are three types of plots, and some Visualization examples are shown below.
 + <a href="https://bokeh.org/"> Bokeh </a>
 
- <b>Example 1</b>: 
- createRecommendationGraph function: creates Bar chart for recommendations.
-
-```ruby
-    def createRecommendationGraph(self, recommendations):
-        courses = []
-        percentage = []
-        if recommendations:
-            for x in recommendations:
-                if x[0] not in courses:
-                    p = x[1] * 100
-                    courses.append(x[0])
-                    percentage.append(p)
-
-            source = ColumnDataSource(data=dict(courses=courses, percentage=percentage))
-
-            TOOLTIPS = [("name","@courses"), ("percentage", "@percentage{0.2f}")]
-
-            # sorting the bars means sorting the range factors
-            sorted_courses = sorted(courses, key=lambda x: percentage[courses.index(x)])
-
-            p = figure(x_range=sorted_courses, plot_height=350, y_range=(0,100), title="Recommendation %", tools="hover,pan,box_select,zoom_in,zoom_out,save,reset,tap", tooltips=TOOLTIPS) 
-
-            p.vbar(x='courses', top='percentage', width=0.5, source=source, color="rgb(52,101,164)")
-
-            url = "https://laproject.herokuapp.com/course/@courses"
-            # url = "http://127.0.0.1:5000/course/@courses"
-            
-
-            taptool = p.select(type=TapTool)
-            taptool.callback = OpenURL(url=url)
-
-            p.xaxis.visible = None
-            p.xgrid.grid_line_color = None
-            p.y_range.start = 0
-
-            script,div = components(p)
-            cdn_js = CDN.js_files[0]
-            cdn_css = CDN.css_files
-            return script, div, cdn_css, cdn_js
-        else:
-            print("No recommendations found")
-            return "No recommendations found"
-```
 <img src="static/images/Recommendations.JPG">
-
-<b>Example 2</b>: 
- createAverageRatingGraph function: creates Bar chart for average rating distribution over the last 4 semesters. 
-
-```ruby
-    def createAverageRatingGraph(self, rating, semester):
-
-        semesters = ['ss19', 'ws19-20', 'ss20', 'ws20-21']
-        #avg. of course rating
-        avg = []
-        status = ["Is Present", "Is Not Yet Present","Is Not Yet Present","Is Not Yet Present"]
-        status1 = ["Is Not Yet Present","Is Present","Is Not Yet Present","Is Not Yet Present"]
-        status2 = ["Is Not Yet Present", "Is Not Yet Present","Is Not Yet Present","Is Not Yet Present"]
-
-        rating = rating.replace(",",".")
-        if semester == 'ss19':
-            avg = [float(rating),5,5,5]
-            source = ColumnDataSource(data=dict(semester=semesters, avg=avg, status=status, color=["green","blue","blue","blue"]))
-        elif semester == 'ws19-20':
-            avg = [5,float(rating), 5, 5]
-            source = ColumnDataSource(data=dict(semester=semesters, avg=avg, status=status1, color=["blue","green","blue","blue"]))
-        else:
-            avg = [5,5,5,5]
-            source = ColumnDataSource(data=dict(semester=semesters, avg=avg, status=status2, color=["blue","blue","blue","blue"]))
         
-        # source = ColumnDataSource(data=dict(semester=semesters, avg=avg, color=["green","blue","blue","blue"]))
-
-        print(semesters)
-        print(avg)
-        TOOLTIPS = [("AverageRating", "@avg")]
-
-        p2 = figure(x_range=semesters, plot_height=250, tools="hover,pan,box_select,zoom_in,zoom_out,save,reset,tap", tooltips=TOOLTIPS)
-
-        p2.vbar(x='semester', top='avg', width=0.9, fill_alpha=0.5, color='color',source=source, legend='status')
-
-        p2.line(x=semesters, y=avg, color="red", line_width=2)
-
-        # url = "https://trello.com/c/YcD1oQfR/36-bokeh-visualization-of-the-recommendation"
-        # taptool = p2.select(type=TapTool)
-        # taptool.callback = OpenURL(url=url)
-        
-        p2.y_range.start = 0
-        p2.x_range.range_padding = 0.1
-        p2.xaxis.major_label_orientation = 1
-        p2.xgrid.grid_line_color = None
-        p2.legend.location = "top_left"
-        script2,div2 = components(p2)
-        cdn_js2 = CDN.js_files[0]
-        cdn_css2 = CDN.css_files
-        return script2, div2, cdn_css2, cdn_js2
-```
+    
 <img src="static/images/avg_rating.JPG">
 
 <a name="headers5"/>
