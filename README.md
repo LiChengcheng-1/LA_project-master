@@ -125,8 +125,10 @@ All visualization charts are created with the tool Bokeh, and there are three ty
 + <a href="https://bokeh.org/"> Bokeh </a>
 + Bar Chart
 <img src="https://github.com/LiChengcheng-1/LA_project-master/blob/master/LA_project-master/static/images/BarChart.png">
+
 + Pie Chart
 <img src="https://github.com/LiChengcheng-1/LA_project-master/blob/master/LA_project-master/static/images/PieChart.png">
+
 + Grouped Bar Chart
 <img src="https://github.com/LiChengcheng-1/LA_project-master/blob/master/LA_project-master/static/images/GroupedBarChart.png">
 
