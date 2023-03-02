@@ -134,7 +134,7 @@ https://github.com/LiChengcheng-1/LA_project-master/blob/master/LA_project-maste
 
 # To deploy the project
 First you need to install below requirements:
-+ <a href="https://code.visualstudio.com/download">Download Visual Studio Code</a> or your preferred IDE.
++ <a href="https://www.jetbrains.com/pycharm/download/#section=windows">Download PyCharm</a> or your preferred IDE.
 + <a href="https://www.python.org/downloads/">Download latest version of Python</a>
 
 After configuring the python inside your IDE you need to install this project from this repository. 
