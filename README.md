@@ -60,35 +60,21 @@ The following technologies are used in this project:
 The project has the following structure:
 
 App (Couses):
-  + data(folder)
-    + bokeh(folder)
-      + recommendation_graph.py       (create visualization graphs)
-    + docs(folder)   (:warning: Some informations about the lecture will be remove due to privacy issues)
-      + html_page_comments(folder)    (comments pages in html format used for scraping)
-      + html_page_gesamtbewertung(folder) (pages containing the average rating of lectures in html format used for scraping)
-      + pdf_page_comments(folder)     (comments pages in pdf)
-      + pdf_page_gesamtbewertung(folder)  (pages containing the average rating of lectures in pdf format)
-      + ss2019(folder)  (pdfs containing the evaluation of lectures during the summer semester 2019)
-      + ws_19_20(folder) (pdfs containing the evaluation of lectures during the winter semester 2018-2019)
-      + readMe.md                     (list of lectures ([INKO](https://www.uni-due.de/iw/inko/en/) department))
-    + machine_learning(folder)
-      + recommandation
-            + content_based
-               + gensim_d2v.py (machine learning model)
-    + nlp(folder)
-      + cleaner.py          (clean the data from the database)           
-    + db.py                 (connect to the database)
-    + scrape.py             (scrape the data and save them in the database)
+  + BarVis.py
+  + DataVis.py
+  + PieVis.py
+  + app.py
+  + config.py
+  + finalized_model.sav
+  + models.py
+  + package.json
   + static (folder)
     + css (folder)
+    + fonts (folder)
     + images (folder)
     + js (folder)
-  + templates (folder)
-    + about_us.html         (about us page)
-	   + app.html              (app page shown after login)
-	   + course.html           (course page)
-	   + index.html            (home page)
-    + signin.html  (sign in page)
+  + templates (folder)  (contian the pages of the Web App)
+
 
 ## Machine Learning Pipeline
 * <a href="data/nlp/cleaner.py">Data preprocessing</a>
