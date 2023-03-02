@@ -124,7 +124,7 @@ def home():
 All visualization charts are created with the tool Bokeh, and there are three types of plots, and some Visualization examples are shown below.
 + <a href="https://bokeh.org/"> Bokeh </a>
 + Bar Chart
-<img src="https://github.com/LiChengcheng-1/LA_project-master/blob/master/LA_project-master/templates/BarVis/BarVis_AAA_All%20Semesters.html">
+https://github.com/LiChengcheng-1/LA_project-master/blob/master/LA_project-master/templates/BarVis/BarVis_AAA_All%20Semesters.html
 + Pie Chart
 <img src="https://github.com/LiChengcheng-1/LA_project-master/blob/master/LA_project-master/templates/PieVis/BarVis_BBB_All%20Semesters.html">
 + Grouped Bar Chart
