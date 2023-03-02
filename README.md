@@ -1,4 +1,5 @@
 # Table of content 
+<img src="https://github.com/LiChengcheng-1/LA_project-master/blob/master/LA_project-master/static/images/logo2.png" align= " right">
 - [The Duck's School](#headers)
 - [Dataset Description](#headers1)
 - [Implementation Technologies](#headers2)
@@ -9,7 +10,7 @@
 
 <a name="headers"/>
 
-<img src="https://github.com/LiChengcheng-1/LA_project-master/blob/master/LA_project-master/static/images/logo2.png" align= "top right">
+<img src="https://github.com/LiChengcheng-1/LA_project-master/blob/master/LA_project-master/static/images/logo2.png" align= " right">
 <br>
 <br>
 <a href="https://www.youtube.com/watch?v=3nJdvB94k4U&ab_channel=Philipp">A Youtube video shows a demo</a>
