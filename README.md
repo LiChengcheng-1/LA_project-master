@@ -92,15 +92,7 @@ App (The Duck's School):
 
 
 ## Machine Learning Pipeline
-* <a href="data/nlp/cleaner.py">Data preprocessing</a>
-  + Remove html Tags, punctuations, stop words from the <i>description</i>, <i>learning_targets</i> and <i>pre_qualifications</i> columns, 
-  + Lemmatization
-  + Merging the 3 columns to form a main column
-* <a href="data/machine_learning/recommandation/content_based/gensim_d2v.py">Machine Learning Algorithm</a> 
-  + Word tokenization
-  + Data Filtering based on Input of the user (language, study course)
-  + Document Tagging
-  + Model Building (Doc2Vec)
+
 
 <a name="headers4"/>
 
