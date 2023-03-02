@@ -21,10 +21,6 @@ In the Duck’s School, we use information about subjects they have studied and 
 The Duck’s School was developed as part of a Learning Analytics lecture project at Duisburg – Essen University.
 
 
-
-
-* [Courses](https://laproject.herokuapp.com/)
-
 <a name="headers1"/>
 
 # Dataset Description
