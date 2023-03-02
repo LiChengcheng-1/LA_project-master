@@ -74,7 +74,7 @@ The following technologies are used in this project:
 # App Structure
 The project has the following structure:
 
-App (Couses):
+App (The Duck's School):
   + BarVis.py
   + DataVis.py
   + PieVis.py
