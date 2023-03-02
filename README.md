@@ -24,25 +24,7 @@ The Duck’s School was developed as part of a Learning Analytics lecture projec
 <a name="headers1"/>
 
 # Dataset Description
-For this project we created our own dataset based on infromations collected from the [Module Database](https://www.uni-due.de/vdb/en_EN/pruefung/1245/detail) for the lectures of the [Department of Computer Science and Applied Cognitive Science (INKO)](https://www.uni-due.de/iw/inko/en/).
-These informations are:
-* Lecture name
-* Language
-* Assigned Study Courses
-* Assigned People
-* Lecture Description, Learning Targets and Pre-Qualifications
 
-Beside these informations, we also collected informations from the [Course Evaluation](https://moodle.uni-due.de/course/view.php?id=2032) which is a summary of students evaluations of lectures for the <b>sommer semester 2019</b> and the <b>winter semester 2019/2020</b>. For privacy reasons the course evaluation is only accessible for students with a moodle account and contains only the evaluation of students for the last 2 years.
-These informations are:
-* Average rating of the lecture
-* Positiv and negative comments of students about the lectures
-
-Needed libraries:
-
-```ruby
-* Beautifulsoup
-* PyPDF2
-```
 
 <a name="headers2"/>
 
