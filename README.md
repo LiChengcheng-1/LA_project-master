@@ -1,5 +1,4 @@
 # Table of content 
-<img src="https://github.com/LiChengcheng-1/LA_project-master/blob/master/LA_project-master/static/images/logo2.png" align= " right">
 - [The Duck's School](#headers)
 - [Dataset Description](#headers1)
 - [Implementation Technologies](#headers2)
