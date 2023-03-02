@@ -123,8 +123,7 @@ def home():
 # Visualization
 All visualization charts are created with the tool Bokeh, and there are three types of plots, and some Visualization examples are shown below.
 + <a href="https://bokeh.org/"> Bokeh </a>
-
- 
++ Bar Chart
 <img src="static/images/Recommendations.JPG">
 
 
