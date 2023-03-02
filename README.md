@@ -142,7 +142,7 @@ First you need to install below requirements:
 After configuring the python inside your IDE you need to install this project from this repository. 
 
 Then you need to install below requirements on our system:
-  * [Flask](https://flask.palletsprojects.com/en/1.1.x/installation/#install-flask) == 1.1.1
+  * [Flask](https://flask.palletsprojects.com/en/1.1.x/installation/#install-flask) == 2.1.2
   * [Pandas](https://pypi.org/project/pandas/) == 0.25.2
   * [Bokeh](https://docs.bokeh.org/en/latest/docs/first_steps/installation.html) == 3.0.3
   * [PyMongo](https://pymongo.readthedocs.io/en/stable/installation.html) == 3.11.3
