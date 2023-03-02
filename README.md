@@ -1,5 +1,5 @@
 # Table of content 
-- [Courses](#headers)
+- [The Duck's School](#headers)
 - [Dataset Description](#headers1)
 - [Implementation Technologies](#headers2)
 - [App Structure](#headers3)
