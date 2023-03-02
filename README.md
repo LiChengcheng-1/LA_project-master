@@ -29,28 +29,30 @@ The Duck’s School was developed as part of a Learning Analytics lecture projec
 <a name="headers2"/>
 
 # Implementation Technologies
-This project is based on the following technologies:
+The following technologies are used in this project:
 
+* Data preprocessing
+  + Pandas
+  + Numpy
 * Front-End
   + Website
     + Flask templates
+    + JS
+    + AJAX
     + CSS
     + HTML
   + Visualisation
     + Bokeh
 * Back-End
   + Web Server
-    + Python
     + Flask
-  +  Data Scraping
-     +  Beautifulsoup
-     +  PyPDF2
-  +  Natural Language Processing (NLP)
-     + NLTK  
   + Machine Learning 
-    + Gensim
+    + Recommender Systems: Recommenders from Microsoft
   + Database
     + mongoDB
+* Other Tools
+  + Jupyter Notebook
+  + Pycharm
 
 <a name="headers3"/>
 
