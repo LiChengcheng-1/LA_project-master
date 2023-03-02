@@ -144,7 +144,7 @@ After configuring the python inside your IDE you need to install this project fr
 Then you need to install below requirements on our system:
   * [Flask](https://flask.palletsprojects.com/en/1.1.x/installation/#install-flask) == 1.1.1
   * [Pandas](https://pypi.org/project/pandas/) == 0.25.2
-  * [Bokeh](https://docs.bokeh.org/en/latest/docs/first_steps/installation.html) == 2.3.0
+  * [Bokeh](https://docs.bokeh.org/en/latest/docs/first_steps/installation.html) == 3.0.3
   * [PyMongo](https://pymongo.readthedocs.io/en/stable/installation.html) == 3.11.3
   * [Gensim](https://pypi.org/project/gensim/) == 3.8.3
   * [BeautifulSoup](https://www.crummy.com/software/BeautifulSoup/bs4/doc/#installing-beautiful-soup) == 4.9.0
