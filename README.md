@@ -87,23 +87,6 @@ App (Couses):
   + Document Tagging
   + Model Building (Doc2Vec)
 
-Needed libraries:
-
-```ruby
-* gensim
-* nltk
-* pandas
-```
-
-## Web structure preparation (app.py)
-app.py is the main file for our backend server using "Flask" python framework. The server starts by rendering the <a href="templates/index.html"> Home Page </a> on http://localhost:5000/.
-
-```ruby
-@app.route('/')
-def home():
-    return render_template('index.html')
-```
-
 <a name="headers4"/>
 
 # Visualization
