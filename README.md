@@ -24,7 +24,22 @@ The Duck’s School was developed as part of a Learning Analytics lecture projec
 <a name="headers1"/>
 
 # Dataset Description
+For this project we created our own dataset based on infromations collected from the [Open University Learning Analytics Dataset
+](https://analyse.kmi.open.ac.uk/open_dataset#about).From 2013 to 2014, the dataset contains information about students, courses, and their activities.
+These informations are:
+* Lecture name
+* Lecture pass rate
+* Students'informations,such as age, gender, region and so on
+* Scores
+* Previous attempts
 
+
+Needed libraries:
+
+```ruby
+* pymongo
+* Pandas
+```
 
 <a name="headers2"/>
 
@@ -60,9 +75,9 @@ The following technologies are used in this project:
 The project has the following structure:
 
 App (Couses):
-  + BarVis.py  (Creating the visualization part)
-  + DataVis.py   (Creating the visualization part)
-  + PieVis.py    (Creating the visualization part)
+  + BarVis.py
+  + DataVis.py
+  + PieVis.py
   + app.py
   + config.py
   + finalized_model.sav
@@ -113,8 +128,13 @@ After configuring the python inside your IDE you need to install this project fr
 Then you need to install below requirements on our system:
   * [Flask](https://flask.palletsprojects.com/en/1.1.x/installation/#install-flask) == 2.1.2
   * [Pandas](https://pypi.org/project/pandas/) == 0.25.2
-  * [Numpy](https://numpy.org/) == 1.24.2 
   * [Bokeh](https://docs.bokeh.org/en/latest/docs/first_steps/installation.html) == 3.0.3
+  * [PyMongo](https://pymongo.readthedocs.io/en/stable/installation.html) == 3.11.3
+  * [Gensim](https://pypi.org/project/gensim/) == 3.8.3
+  * [BeautifulSoup](https://www.crummy.com/software/BeautifulSoup/bs4/doc/#installing-beautiful-soup) == 4.9.0
+  * [PyPDF2](https://pypi.org/project/PyPDF2/) == 1.26.0
+  * [NLTK](https://www.nltk.org/install.html) == 3.5
+  * [dotenv](https://pypi.org/project/python-dotenv/) == 0.15.0
 
 <a name="headers6"/>
 
