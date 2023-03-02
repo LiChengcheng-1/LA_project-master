@@ -125,9 +125,10 @@ All visualization charts are created with the tool Bokeh, and there are three ty
 + <a href="https://bokeh.org/"> Bokeh </a>
 + Bar Chart
 <img src="static/images/Recommendations.JPG">
-
-
-<img src="static/images/avg_rating.JPG">
++ Pie Chart
+<img src="static/images/Recommendations.JPG">
++ Grouped Bar Chart
+<img src="static/images/Recommendations.JPG">
 
 <a name="headers5"/>
 
