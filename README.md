@@ -37,7 +37,7 @@ These informations are:
 Needed libraries:
 
 ```ruby
-* pymongo
+* Pymongo
 * Pandas
 ```
 
