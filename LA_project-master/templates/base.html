@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>{% block title %}{% endblock %}</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+<link rel="stylesheet" href="{{ url_for("static", filename="css/style.css") }}">
+<link rel="stylesheet" href="{{ url_for("static", filename="css/zerogrid.css") }}" type="text/css" media="all">
+
+{% block js %}
+{% endblock %}
+
+{% block style %}
+{% endblock %}
+
+</head>
+<body class="page1" id="top">
+<!--==============================
+              header
+=================================-->
+<div class="main">
+<header style="border-bottom: 1px solid #989797;">
+  <div class="zerogrid">
+    <div class="col-full"><div class="wrap-col">
+      <h1 class="logo">
+        <a href="{{ url_for('index') }}">Duck<span style="font-size: 20px">Your personal school</span>
+        </a>
+      </h1>
+    </div></div>
+  </div>
+  <section id="stuck_container">
+  <!--==============================
+              Stuck menu
+  =================================-->
+    <div class="zerogrid">
+        <div class="col-full"><div class="wrap-col">
+          <div class="row navigation">
+            <nav>
+              <ul class="sf-menu">
+               <li><a href="{{ url_for('index') }}">Home</a></li>
+               <li><a href="{{ url_for('about') }}">About</a></li>
+               <li><a href="{{ url_for('classes') }}">Classes</a></li>
+               <li><a href="{{ url_for('staff') }}">Staff</a></li>
+               <li><a href="{{ url_for('contact') }}">Contacts</a></li>
+             </ul>
+            </nav>
+          </div>
+     </div></div>
+    </div>
+  </section>
+</header>
+<!--=====================
+          Content
+======================-->
+<section id="content">
+  {% block content %}{% endblock %}
+</section>
+
+<!--===============================
+              footer
+=================================-->
+<div class="footer-top">
+  <div class="zerogrid">
+    <div class="col-full">
+      <div class="sep-1"></div>
+    </div>
+    <div class="row">
+	    <div class="col-1-3"><div class="wrap-col">
+	      <address class="address-1"> <div class="fa fa-home"></div>Lotharstraße 65, 47057 Duisburg</address>
+	    </div></div>
+	    <div class="col-1-3"><div class="wrap-col">
+	      <a href="#" class="mail-1"><span class="fa fa-envelope"></span>rubberducks@gmail.com</a>
+	    </div></div>
+	    <div class="col-1-3"><div class="wrap-col">
+	      <div class="socials">
+	        <a href="#">facebook</a>
+	        <a href="#">twitter</a>
+	        <a href="#">google+</a>
+	      </div>
+	    </div></div>
+    </div>
+  </div>
+</div>
+</div>
+<footer id="footer">
+  <div class="zerogrid">
+    <div class="col-full"><div class="wrap-col">
+      <div class="sub-copy" style="text-align: center">Copyright &copy; 2023 Rubber Ducks</div>
+    </div></div>
+  </div>
+</footer>
+<a href="#" id="toTop" class="fa fa-angle-up"></a>
+</body>
+<script src="https://code.jquery.com/jquery-3.6.3.min.js" integrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU=" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js" integrity="sha384-mQ93GR66B00ZXjt0YO5KlohRA5SY2XofN4zfuZxLkoj1gXtW8ANNCe9d5Y3eG5eD" crossorigin="anonymous"></script>
+{% block end_js %}
+{% endblock %}
+</html>
