@@ -15,14 +15,13 @@
 <a href="https://www.youtube.com/watch?v=3nJdvB94k4U&ab_channel=Philipp">A Youtube video shows a demo</a>
 
 
-# Courses
-Welcome to the Lecture Recommender Application: <b>Courses</b>.<br>
-In this project work we use informations about the study programm and interests of students to recommend them the courses that fit the best to them.
-We give the students the possibility to dive deeper into the lecture information as well as lectures evaluations from the previous semesters.
-* The Lecture Recommender Application was created as part of a school project for [Learning Analytics](https://www.uni-due.de/soco/teaching/courses/lecture-la-ws18.php)
+# The Duck's School
+Welcome to The Duck’s School, where students may choose their ideal course based on many approaches.
+In the Duck’s School, we use information about subjects they have studied and other students' subjects by employing the Recommended Systems approach, as well as the non-Personalized approach by visualizing different attributes of courses to students to assist them compare between the courses. The Ducks' School is user-friendly for students in all disciplines, not just IT.
+The Duck’s School was developed as part of a Learning Analytics lecture project at Duisburg – Essen University.
 
 
-See the deployed application on Heroku server:
+
 
 * [Courses](https://laproject.herokuapp.com/)
 
