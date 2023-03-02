@@ -124,11 +124,11 @@ def home():
 All visualization charts are created with the tool Bokeh, and there are three types of plots, and some Visualization examples are shown below.
 + <a href="https://bokeh.org/"> Bokeh </a>
 + Bar Chart
-<img src="static/images/Recommendations.JPG">
+<img src="https://github.com/LiChengcheng-1/LA_project-master/blob/master/LA_project-master/templates/BarVis/BarVis_AAA_All%20Semesters.html">
 + Pie Chart
-<img src="static/images/Recommendations.JPG">
+<img src="https://github.com/LiChengcheng-1/LA_project-master/blob/master/LA_project-master/templates/PieVis/BarVis_BBB_All%20Semesters.html">
 + Grouped Bar Chart
-<img src="static/images/Recommendations.JPG">
+<img src="https://github.com/LiChengcheng-1/LA_project-master/blob/master/LA_project-master/templates/GroupBarVis/GroupBarVis_All%20Semesters.html">
 
 <a name="headers5"/>
 
@@ -150,31 +150,14 @@ Then you need to install below requirements on our system:
   * [NLTK](https://www.nltk.org/install.html) == 3.5
   * [dotenv](https://pypi.org/project/python-dotenv/) == 0.15.0
 
-## Usage
-
-### Scraping
-```bash
- python data/scrape.py
-```
-### Run Application
-```bash
-python app.py
-```
-
-## Some Resources (Documentation and other links)
-#### Scraping
-* [PDF Processing with Python](https://towardsdatascience.com/pdf-preprocessing-with-python-19829752af9f)
-#### NLP
-* [Text Cleaning in Natural Language Processing(NLP)](https://medium.com/analytics-vidhya/text-cleaning-in-natural-language-processing-nlp-bea2c27035a6)
-* [NLP for Beginners: Cleaning & Preprocessing Text Data](https://towardsdatascience.com/nlp-for-beginners-cleaning-preprocessing-text-data-ae8e306bef0f)
-* [Text Cleaning Methods for Natural Language Processing](https://towardsdatascience.com/text-cleaning-methods-for-natural-language-processing-f2fc1796e8c7)
-#### Machine Learning
-* [Tf-Idf vs Doc2Vec - Contrast and Compare](https://www.youtube.com/watch?v=iSkbq6Tjkj0&ab_channel=AliannaJ.Maren)
 <a name="headers6"/>
 
 # Members
-* Martin [Github](https://github.com/martingarcia99) [LinkedIn](https://www.linkedin.com/in/mart%C3%ADn-jos%C3%A9-garc%C3%ADa-mu%C3%B1oz-328757193/)
-* Philipp [Github](https://github.com/LA-UDE) [Xing](https://www.xing.com/profile/Philipp_Herrmann84)
-* Veronika [Github](https://github.com/verodemy)
-* Paul [Github](https://github.com/Arthuro1) [LinkedIn](https://www.linkedin.com/in/paul-arthur-meteng-kamdem-06b922125/)
+* Hong Yang
+* Chengcheng Li
+* Chau Le 
+* Zaid A.R Abdulmohsin
+* Ahmed Abdelbary
+* Saba Darbandi
+
 
