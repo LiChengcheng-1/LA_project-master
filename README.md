@@ -139,6 +139,11 @@ Then you need to install below requirements on our system:
   * [NumPy](https://numpy.org/) == 1.24.2 
   * [Bokeh](https://docs.bokeh.org/en/latest/docs/first_steps/installation.html) == 3.0.3
   * [PyMongo](https://pymongo.readthedocs.io/en/stable/installation.html) == 4.3.3
+  * [sklearn](https://scikit-learn.org/stable/) == 1.2
+  * [Recommenders](https://github.com/microsoft/recommenders) == 1.1.1
+  * [scrapbook](https://nteract-scrapbook.readthedocs.io/en/latest/) 
+  * [pickle](https://docs.python.org/3/library/pickle.html)
+  
   
 
 <a name="headers6"/>
