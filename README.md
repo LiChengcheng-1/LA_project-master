@@ -89,6 +89,8 @@ App (The Duck's School):
     + images (folder)
     + js (folder)
   + templates (folder)  (contian the pages of the Web App)
+  + ML (folder)
+  + Visualisation (folder)
 
 
 ## Machine Learning Pipeline
